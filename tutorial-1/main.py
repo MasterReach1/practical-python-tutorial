@@ -1,16 +1,16 @@
-number_1 = int(input("Enter a number >> "))
+number_1 = int(input("Enter your number here >> "))
 
-number_2 = int(input("Enter another number >> "))
+number_2 = int(input("Enter your second number here >> "))
 
-operation = input("Please say 'add', 'subtract', 'multiply', or 'divide.'")
+operation = input('Enter \'add\', \'subtract\', \'multiply\', or \'divide\' >> ')
 
-if (operation == 'add'):
-    print(f"The sum is {number_1 + number_2}")
-elif (operation == 'subtract'):
-    print(f"The difference is { number_1 - number_2 }")
-elif (operation == 'multiply'):
-    print(f"The product is { number_1 * number_2 }")
-elif (operation == 'divide'):
-    print(f"The quotient is {number_1 / number_2}")
+if (operation.lower() == 'add'):
+    print(number_1 + number_2)
+elif (operation.lower() == 'subtract'):
+    print(number_1 - number_2)
+elif (operation.lower() == 'multiply'):
+    print(number_1 * number_2)
+elif (operation.lower() == 'divide'):
+    print(number_1 / number_2)
 else:
     print("Invalid input")
