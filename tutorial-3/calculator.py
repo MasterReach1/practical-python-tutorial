@@ -10,9 +10,6 @@ class Calculator:
         print("Symbols allowed: \n[+ for addition]\n[- for subtraction]\n[* for multiplication]\n[/ for division]")
         user_input_string = input("Enter an equation here >> ")
         return user_input_string.replace(' ', '')
-    
-# TODO: Build out function for detecting operators and calling functions according to the symbol. POSSIBLY \
-    # use PEMDAS?
 
     def get_two_sides_of_equation(self, user_input_string):
         self.index_of_operator = 0
